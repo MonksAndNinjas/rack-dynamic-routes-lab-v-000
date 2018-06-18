@@ -1,3 +1,3 @@
-class application
+class Application
 
 end
