@@ -8,7 +8,7 @@ class Application
       resp.write "Route not found"
       resp.status = 404
 
-    elsif req.path.match(/items/)
+    elsif req.path=="/items/"
 
     end
 
