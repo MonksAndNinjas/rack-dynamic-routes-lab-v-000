@@ -13,7 +13,7 @@ class Application
       item = req.params["item"]
 
       if @@item.include?(item)
-        resp.write "item"
+        resp.write "#{item.price}"
     end
 
     resp.finish
