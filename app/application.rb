@@ -14,6 +14,7 @@ class Application
 
       if @@item.include?(item)
         resp.write "#{item.price}"
+      end
     end
 
     resp.finish
