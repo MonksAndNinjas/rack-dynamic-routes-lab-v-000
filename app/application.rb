@@ -6,6 +6,8 @@ class Application
 
     if req.path.math(/testing/)
       resp.status = 404
-  end
+    end
 
+    resp.finish
+  end
 end
