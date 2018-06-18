@@ -17,7 +17,6 @@ class Application
         resp.write item.price
       else
         resp.write "Item not found"
-
       end
     end
 
