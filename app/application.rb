@@ -10,6 +10,8 @@ class Application
 
     elsif req.path=="/items"
 
+      item_price = req.params["item"]
+
     end
 
     resp.finish
