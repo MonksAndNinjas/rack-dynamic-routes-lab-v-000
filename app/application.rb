@@ -10,8 +10,10 @@ class Application
 
     elsif req.path=="/items"
 
-      item_price = req.params["item"]
+      item = req.params["item"]
 
+      if @@item.include?(item)
+        resp.write "item"
     end
 
     resp.finish
