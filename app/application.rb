@@ -10,7 +10,7 @@ class Application
 
     elsif req.path.match(/items/)
 
-      item = req.path.split("/items/")
+      item_name = req.path.split("/items/").last
 
       if @@item.include?(item)
         resp.write "#{item.price}"
