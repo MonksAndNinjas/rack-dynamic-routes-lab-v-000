@@ -8,15 +8,15 @@ class Application
       resp.write "Route not found"
       resp.status = 404
 
-    elsif req.path=="/items"
+    elsif req.path.match(/items/)
 
-      item = req.params["item"]
+      item_price = req.params["item"]
 
       if @@item.include?(item)
         resp.write "#{item.price}"
       else
         resp.write "Item not found"
-      
+
       end
     end
 
